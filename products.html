@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>North Star Bakery - Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="bakerylogo.jpg" alt="North Star Bakery golden compass logo">
+        <h1>Our Handcrafted Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Pre-orders</a></li>
+                <!-- Added Wishlist link with live counter badge -->
+                <li><a href="#wishlist-section">My Wishlist (<span id="wishlist-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Product Categories</h2>
+            <p>Explore our daily selection of artisan goods crafted with love. No online checkout required; use our contact form to submit pre-orders or inquiries.</p>
+            <img src="assortment.jpg" alt="Assortment of fresh rustic breads displayed on a wooden counter">
+        </section>
+
+        <!-- Product Cards updated with data attributes and favorite buttons for interactivity -->
+        <section class="product-card" data-id="1" data-name="Artisan Breads">
+            <h3>Breads</h3>
+            <p>Traditional sourdough, country rye, and whole wheat baguettes.</p>
+            <p><strong>Price Range:</strong> $6.00 – $9.50 per loaf</p>
+            <button class="favorite-btn">Add to Wishlist</button>
+        </section>
+
+        <section class="product-card" data-id="2" data-name="Handcrafted Pastries">
+            <h3>Pastries</h3>
+            <p>Buttery croissants, fruit Danishes, and cinnamon morning buns.</p>
+            <p><strong>Price Range:</strong> $3.50 – $6.00 each</p>
+            <button class="favorite-btn">Add to Wishlist</button>
+        </section>
+
+        <section class="product-card" data-id="3" data-name="Custom Cakes & Tarts">
+            <h3>Cakes</h3>
+            <p>Custom celebration cakes, seasonal fruit tarts, and rich chocolate layer cakes.</p>
+            <p><strong>Price Range:</strong> $28.00 – $65.00</p>
+            <button class="favorite-btn">Add to Wishlist</button>
+        </section>
+
+        <!-- Wishlist Display Section for LocalStorage persistence feedback -->
+        <section id="wishlist-section">
+            <h2>Your Saved Wishlist Favorites</h2>
+            <ul id="wishlist-items">
+                <li>No favorites saved yet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- Connected script file to power interactivity and localStorage -->
+    <script src="script.js"></script>
+</body>
+</html>
